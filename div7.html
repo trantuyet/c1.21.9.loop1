@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chia hết cho 7</title>
+</head>
+<body>
+<input type="number" id="num"> nhập số nguyên
+<button id="result"> Kiểm tra</button>
+<script>
+    let a = 12345;
+    function div7(a) {
+        a = a.toString();
+        let mid =0;
+        let tg =1;
+        for (let i = 0; i <= a.length; i++) {
+            tg = a[i] *3;
+            if (i < a.length){
+                mid += (tg + a[i+1]);
+            } else mid += tg;
+            tg =1;
+        }
+        if (mid % 7 ==0) {
+            return true;
+        }
+        else return false;
+    }
+    // function
+</script>
+</body>
+</html>
